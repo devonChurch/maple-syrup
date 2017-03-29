@@ -11,7 +11,7 @@ module.exports.createScaffold = (event, context, callback) => {
 
             <body>
                 <h1>Hello =)</h1>
-				<p>From Travis CI</p>
+				<p>Any link from the <a href="/">root domain</a> to a arbitrary <a href="/foo/bar/baz/">nested directory</a> will return this predictable HTML response.</p>
             </body>
         </html>
 
