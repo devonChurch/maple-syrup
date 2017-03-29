@@ -11,6 +11,7 @@ module.exports.createScaffold = (event, context, callback) => {
 
             <body>
                 <h1>Hello =)</h1>
+				<p>From Travis CI</p>
             </body>
         </html>
 
