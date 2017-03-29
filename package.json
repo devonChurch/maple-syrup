@@ -4,7 +4,7 @@
   "description": "A “Catch All” AWS Lambda to serve HTML content that replaces an EC2 instance",
   "main": "index.js",
   "scripts": {
-    "serverless": "serverless create --template aws-nodejs --path ./my-sevice",
+    "start:development": "serverless offline start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/devonChurch/maple-syrup#readme",
   "dependencies": {
     "serverless": "^1.9.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.13.1"
   }
 }
