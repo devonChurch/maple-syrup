@@ -1,0 +1,23 @@
+{
+  "name": "maple-syrup",
+  "version": "1.0.0",
+  "description": "A “Catch All” AWS Lambda to serve HTML content that replaces an EC2 instance",
+  "main": "index.js",
+  "scripts": {
+    "serverless": "serverless create --template aws-nodejs --path ./my-sevice",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonChurch/maple-syrup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devonChurch/maple-syrup/issues"
+  },
+  "homepage": "https://github.com/devonChurch/maple-syrup#readme",
+  "dependencies": {
+    "serverless": "^1.9.0"
+  }
+}
