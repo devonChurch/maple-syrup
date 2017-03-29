@@ -59,7 +59,7 @@ plugins:
 
 functions:
 
-    rootScaffold:
+    root:
         handler: handler.createScaffold
         events:
             - http:
@@ -71,7 +71,7 @@ functions:
                         Content-Type: "'text/html'"
                     template: $input.path('$')
 
-    nestedScaffold:
+    nested:
         handler: handler.createScaffold
         events:
             - http:
