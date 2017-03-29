@@ -7,4 +7,4 @@ env:
 before_install:
     - npm install serverless
 script:
-    - ./serverless-deploy.sh
+    - bash ./serverless-deploy.sh
