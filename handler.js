@@ -2,18 +2,17 @@
 
 module.exports.createScaffold = (event, context, callback) => {
 
-	const env = 'dev';
-
 	const html = (`
 
         <html>
             <head>
-                <title>Hello =)</title>
+                <title>Hello</title>
             </head>
 
             <body>
-                <h1>Hello =)</h1>
-				<p>Any link from the <a href="${env}/">root domain</a> to a arbitrary <a href="${env}/foo/bar/baz/">nested directory</a> will return this predictable HTML response.</p>
+                <h1>Hello</h1>
+				<p>This content has been generated via an AWS API Gateway request that calls a Lambda to generate the HTML.</p>
+				<p>We can pass in any URL from the a root domain request to an arbitrary nested directory and always return this predictable HTML response.</p>
             </body>
         </html>
 
