@@ -6,7 +6,5 @@ env:
       - secure: Sm9e4JjUAcXe0tejg3EipeAPkaT3uQnJIsK6l2k2CbV8lSzZq8Cp16BUuRhdEj+S0I/Tqj8hOAaBO+CZ1kyncvbX5VlmtN4GR4t6IZbZZBlmnBK1hL9uM/e6GxWPJdzgAd3IMSCeEhoD9lyhxF8q4P9RQggtXGO6u38KJgzUcXixSYIsatsGUjmY2zULowqgip9+0Yf0jFRvSAgDiyw3FvGcHnSAnvdcnqBS4t/XSyCOPcV0oTyFWf0I1ESCItGqibZwLBOrvdxKZVrUZPXZ7WudPmyPKzM9OzthBI83e0SMEeHfDKrav+EK8NwSqiLZoUlVGZHbFmwd9+hACN0Dpwaw9hblMKogT7VjeMpk8fJf7wEuZzwdFyclp0anOz5GMu0N6R4GHXxoFCvTsN0Oti1qs0thmnmO7k9raW/ybTH0S4exwBJf6pnwMZPo3Mxj3KAEi+nVtEYzTQsiBTPS5cjOM2wDCT6wVOQcMGjf4jl6uGt1s97QwShlH9LCNjF0Ja+yUklhMMvxuZYRrgJKAun2taYa9NEal1obcQmnIXujN1FMP6ODuXg4cdBoyaJbmIORzLm72T/OCyacU+Z3qk5w4e8aJJjWsi2cfEMCrHFB7rvVbZwC+BVoEeo/nJu7qN1c2mb/906iRb7uQIRYTigbHYvpJMz98nbJ2NY1wVc=
 before_install:
     - npm install serverless
-    - echo env.TRAVIS "${env.TRAVIS}"
-    - echo TRAVIS "${TRAVIS}"
 script:
     - bash ./serverless-deploy.sh
