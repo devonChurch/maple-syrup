@@ -5,8 +5,8 @@ module.exports.createScaffold = (event, context, callback) => {
 	const isProduction = process.env.NODE_ENV === 'production';
 	const createLinkTag = src => `<link rel="stylesheet" href="${src}"/>`;
 	const createScriptTag = src => `<script src="${src}"></script>`;
-	const styles = isProduction ? createLinkTag('/xxxxx/client.css') : '';
-	const script = isProduction ? createScriptTag('/xxxxx/client.js') : createScriptTag('http://localhost:8004/research-hub/client.js');
+	const styles = isProduction ? createLinkTag('https://s3-ap-southeast-2.amazonaws.com/research-hub/css/client.css') : '';
+	const script = isProduction ? createScriptTag('https://s3-ap-southeast-2.amazonaws.com/research-hub/js/client.js') : createScriptTag('http://localhost:8004/research-hub/client.js');
 	const doctype = '<!doctype html>';
 	const html = (`
 		<html>
