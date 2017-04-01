@@ -4,7 +4,7 @@
   "description": "A “Catch All” AWS Lambda to serve HTML content that replaces an EC2 instance",
   "main": "index.js",
   "scripts": {
-    "start:development": "serverless offline start",
+    "start:development": "NODE_ENV=development && serverless offline start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

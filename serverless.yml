@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: serverless-react-scaffold
+service: react-scaffold-http-endpoint
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -59,7 +59,7 @@ plugins:
 
 functions:
 
-    rootScaffold:
+    root:
         handler: handler.createScaffold
         events:
             - http:
@@ -71,7 +71,7 @@ functions:
                         Content-Type: "'text/html'"
                     template: $input.path('$')
 
-    nestedScaffold:
+    nested:
         handler: handler.createScaffold
         events:
             - http:
