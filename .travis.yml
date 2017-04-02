@@ -13,8 +13,8 @@ env:
 #   only:
 #     - master
 
-before_install:
-- npm install serverless
+# before_install:
+# - npm install serverless
 
 script:
 - bash ./serverless-deploy.sh
