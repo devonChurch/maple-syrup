@@ -2,6 +2,8 @@
 
 module.exports.createScaffold = (event, context, callback) => {
 
+	console.log('NODE_ENV', process.env.NODE_ENV);
+
 	const isProduction = !(process.env.NODE_ENV === 'development');
 	const createLinkTag = src => `<link rel="stylesheet" href="${src}"/>`;
 	const createScriptTag = src => `<script src="${src}"></script>`;
