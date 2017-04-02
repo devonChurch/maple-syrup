@@ -2,7 +2,9 @@
 
 module.exports.createScaffold = (event, context, callback) => {
 
-	const isProduction = process.env.NODE_ENV === 'production';
+	console.log('NODE_ENV', process.env.NODE_ENV);
+
+	const isProduction = !(process.env.NODE_ENV === 'development');
 	const createLinkTag = src => `<link rel="stylesheet" href="${src}"/>`;
 	const createScriptTag = src => `<script src="${src}"></script>`;
 	const styles = isProduction ? createLinkTag('https://s3-ap-southeast-2.amazonaws.com/research-hub/css/client.css') : '';
